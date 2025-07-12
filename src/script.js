@@ -39,11 +39,10 @@ document.querySelector('.check').addEventListener('click', function() {
             displayMessage('📛You lost the game!');
             document.querySelector('.score').textContent = 0;
         } 
-    } 
-   
+    }  
 })
 
-// When player wants to play again
+// Code to make it possible to play again.
 document.querySelector('.again').addEventListener('click', function() {
     score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
@@ -54,6 +53,4 @@ document.querySelector('.again').addEventListener('click', function() {
     document.querySelector('.guess').value = '';
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.width = '15rem';
-
-
 })
