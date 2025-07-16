@@ -8,7 +8,6 @@ const displayMessage = function(message) {
     document.querySelector('.message').textContent = message;
 }
 
-
 document.querySelector('.check').addEventListener('click', function() {
     const guess = Number(document.querySelector('.guess').value);
 
@@ -29,7 +28,7 @@ document.querySelector('.check').addEventListener('click', function() {
             document.querySelector('.highscore').textContent = highScore;
         }
        
-        // When guess is wrong
+        // When the guess is wrong
     } else if (guess !== secretNumber) {
          if (score > 1) {
             displayMessage(guess > secretNumber ? '📈 Too high' : '📉 Too low'); 
