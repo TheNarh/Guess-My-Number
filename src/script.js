@@ -11,7 +11,7 @@ const displayMessage = function(message) {
 document.querySelector('.check').addEventListener('click', function() {
     const guess = Number(document.querySelector('.guess').value);
 
-    // When there is no guess
+    // When a user has not entered a number
     if (!guess) {
         displayMessage('❌ No Number!');
         
